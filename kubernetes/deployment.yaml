@@ -6,7 +6,7 @@ metadata:
     app: ecsdemo-nodejs
   namespace: default
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
       app: ecsdemo-nodejs
@@ -25,5 +25,5 @@ spec:
         imagePullPolicy: Always
         name: ecsdemo-nodejs
         ports:
-        - containerPort: 3000
+        - containerPort: 5000
           protocol: TCP
